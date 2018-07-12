@@ -62,3 +62,8 @@ end
 	ζ.s8 = s8
 	return nothing
 end
+
+OneInternalState(::Type{T}) = OneInternalState(rand(T))
+TwoInternalStates(::Type{T}) = TwoInternalStates(rand(T,2)...,)
+FourInternalStates(::Type{T}) = FourInternalStates(rand(T,4)...,)
+EightInternalStates(::Type{T}) = EightInternalStates(rand(T,8)...,)
