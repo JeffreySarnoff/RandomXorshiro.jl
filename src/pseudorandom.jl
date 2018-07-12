@@ -34,7 +34,7 @@ function rand(internal::TwoInternalStates{T}) where {T<:IUI64}
 	return nextvalue
 end
 
-function rand(internal::FourInternalSates{T}) where {T<:IUI64}
+function rand(internal::FourInternalStates{T}) where {T<:IUI64}
     s1, s2, s3, s4 = state(internal)
 
 	nextvalue =  s2
