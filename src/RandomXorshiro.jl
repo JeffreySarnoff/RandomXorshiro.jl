@@ -13,4 +13,8 @@ abstract type AbstractInternalState end
 const IUI32 = Union{Int32, UInt32}
 const IUI64 = Union{Int64, UInt64}
 
+include("rotatebits.jl")
+
+
+
 end # RandomXorshiro
